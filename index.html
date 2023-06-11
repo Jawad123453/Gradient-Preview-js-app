@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="anythink.css">
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div class="mainoutput" :style="{ backgroundImage: 'linear-gradient('+ dirction +' , '+ one +' , '+ two +' , '+ there +')'}">
+      <!--  }" -->
+      Gradient Preview
+    </div>
+    <div class="maininputs">
+      <div class="blocks">
+        <p>Dirction</p>
+        <select v-model="dirction">
+          <option value="to top">to top</option>
+          <option value="to bottom">to bottom</option>
+          <option value="to left">to left</option>
+          <option value="to right">to right</option>
+        </select>
+      </div>
+      <div class="blocks">
+        <p>Color Stop One</p>
+        <input type="text" v-model="one">
+      </div>
+      <div class="blocks">
+        <p>Color Stop One</p>
+        <input type="text" v-model="two">
+      </div>
+      <div class="blocks">
+        <p>Color Stop There</p>
+        <input type="text" v-model="there">
+      </div>
+    </div>
+    <div class="reult">
+      <h1>Css Code : background: linear-gradient({{dirction}}, {{one}},{{two}},{{there}});</h1>
+    </div>
+  </div>
+  <script src="anythink.js"></script>
+</body>
+</html>

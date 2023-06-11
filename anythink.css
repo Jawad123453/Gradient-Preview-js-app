@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.mainoutput{
+  width: 100%;
+  height:100px;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, rgb(2,0,36),rgb(9,9,121),rgb(68,0,255));  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:white;
+  font-size: 22px;
+  font-weight: bold;
+}
+.maininputs{
+  width: 600px;
+  margin: 0 auto 20px;
+}
+.maininputs .blocks{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-bottom: 20px;
+}
+.maininputs .blocks p{
+  color:#777;
+  font-size: 22px;
+}
+.maininputs .blocks input,
+.maininputs .blocks option,
+.maininputs .blocks select{
+  padding:13px;
+  font-size: 20px;
+  font-weight: normal;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  outline: none;
+}
+.reult{
+  width: fit-content;
+  margin: 0 auto;
+}
+.reult h1{
+  font-size: 20px;
+  background-color: black;
+  padding:10px;
+  color:white;
+}
